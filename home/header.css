@@ -1,0 +1,14 @@
+header {
+    padding: 60px 40px;
+    
+
+    a {
+    font-size: 30px;
+    transition: .5s ease-in;
+    }
+
+    a:hover {
+        color: var(--color-contrast);
+        opacity: .4;
+    }
+}

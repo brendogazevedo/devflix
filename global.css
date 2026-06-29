@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #d83018;
+  --secondary-color: #f07848;
+  --color-text: #fdfcce;
+  --active-color: #c0d8d8;
+  --background-color: #3a3232;
+  --color-contrast: #2c2c2c;
+
+  --font-logo: "Bebas Neue", sans-serif;
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding-block: 40px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+h1 {
+  font-family: var(--font-logo);
+  font-size: 40px;
+  color: var(--color-text);
+}
+
+h2 {
+  font-family: var(--font-title);
+  color: var(--color-text);
+}
+
+p {
+  font-family: var(--font-title);
+  color: var(--color-text);
+}
+
+a {
+  font-family: var(--font-text);
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+li {
+  list-style: none;
+}
