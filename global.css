@@ -89,7 +89,7 @@ span {
 
   &:hover {
     > svg {
-      animation: rotate 1.5s ease-in forwards infinite alternate;
+      animation: rotate .8s linear forwards infinite alternate;
     }
   }
 
