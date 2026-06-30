@@ -1,0 +1,49 @@
+.intro {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: intro-on 2.3s ease-in forwards;
+
+    h1 {
+        font-size: 80px;
+        color: var(--primary-color);
+    }
+
+    h1:first-child {
+        font-size: 1px;
+
+        animation: first-h1 .8s ease-in forwards;
+    }
+
+    h1:nth-child(2) {
+        width: 0px;
+        overflow-x: hidden;
+
+        animation: second-h1 1s ease-in .8s forwards;
+    }
+}
+
+@keyframes first-h1 {
+    to {
+        font-size: 80px;
+    }
+}
+
+@keyframes second-h1 {
+    to {
+        width: 5ch;
+    }
+}
+
+@keyframes intro-on {
+    to {
+        display: none;
+    }
+}

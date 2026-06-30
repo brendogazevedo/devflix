@@ -76,6 +76,7 @@ span {
   position: fixed;
   bottom: 50px;
   right: 50px;
+  z-index: 5;
 
   background-color: var(--primary-color);
   border-radius: 100%;
@@ -87,7 +88,9 @@ span {
   align-items: center;
 
   &:hover {
-    animation: rotate 1.5s ease-in forwards infinite;
+    > svg {
+      animation: rotate 1.5s ease-in forwards infinite alternate;
+    }
   }
 
   input {
@@ -111,9 +114,6 @@ span {
     justify-content: center;
     align-items: center;
     display: none;
-
-    animation: rotate-off ;
-    
   }
 
   .modal-box {
@@ -144,16 +144,12 @@ span {
 }
 
 @keyframes rotate {
-  0% {
+  from {
     transform: rotate(50deg);
   }
 
-  50% {
+  to {
     transform: rotate(-50deg);
-  }
-
-  100% {
-    transform: rotate(50deg);
   }
 }
 
